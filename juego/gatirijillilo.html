@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego del gato</title>
+    
+    
+
+    
+    <style type="text/css">
+        section#principal{
+            display: inline-block;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+        }
+        article#comandos{
+            display: inline-block;
+            border: 1px solid lightgray;
+            min-height: 300px;
+            vertical-align: top;
+            width: 25%;
+        }
+        article#tablero{
+            border: 1px solid lightgreen;
+            display: inline-block;
+            margin: 0 auto;
+            text-align: center;
+            width: 50%;
+        }
+        article#tablero input{
+            font-size: 3em;
+            height: 80px;
+            margin: 10px;
+            width: 80px;
+        }
+        input[type="button"]#iniciar{
+            font-size: 0.8em;
+            margin-top: 0.3em;
+            padding: 0.7em;
+        }
+        input[type="text"]{
+            font-size: 1em;
+            margin: 0.2em;
+            padding: 0.1em;
+        }
+        label{
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .botonInicial{
+            color: limegreen;
+            background-color: limegreen;
+        }
+        .botonJugador1{
+            color: palegoldenrod;
+            background-color: purple;
+        }
+        .botonJugador2{
+            color: palegoldenrod;
+            background-color: teal;
+        }
+    </style> 
+    <script src="gatva.js"></script>
+</head>
+<body>
+   <section id="principal">
+        <article id="comandos">
+            jugador-1:
+            <input type="text" id="jugador1"><br>
+            jugador-2:
+            <input type="text" id="jugador2"><br>
+            <input type="button" id="iniciar" value="Comenzar"><br>
+            <label id="turnojugador"></label>
+            
+        </article>
+        <article id="tablero"> 
+            <input type="button" id="b0" onclick="colocar(this)">
+            <input type="button" id="b1" onclick="colocar(this)">
+            <input type="button" id="b2" onclick="colocar(this)">
+            <br>
+            <input type="button" id="b3" onclick="colocar(this)">
+            <input type="button" id="b4" onclick="colocar(this)">
+            <input type="button" id="b5" onclick="colocar(this)">
+            <br>
+            <input type="button" id="b6" onclick="colocar(this)">
+            <input type="button" id="b7" onclick="colocar(this)">
+            <input type="button" id="b8" onclick="colocar(this)">
+            <br>
+        </article>
+   </section>
+    
+</body>
+</html>

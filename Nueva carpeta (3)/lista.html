@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+       
+
+    .list-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    }
+    .list-group-item {
+    position: relative;
+    display: flex;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0px;
+    background-color: #52A29E;
+    border: 0px solid rgba(0,0,0,.125);
+}
+.list-group-item2 {
+    position: relative;
+    display: flex;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0px;
+    background-color: #52A29E;
+    border: 0px solid rgba(0,0,0,.125);
+}
+.pendientes {
+font-family: sans-serif;
+font-size: 18px;
+font-weight: 400;
+color: #ffffff;
+background: #52A29E;
+margin: 0 0 25px;
+overflow: hidden;
+padding: 20px;
+}
+.grupodelistas {
+font-family: sans-serif;
+font-size: 18px;
+font-weight: 400;
+color: #ffffff;
+background: #52A29E;
+margin: 0 0 25px;
+overflow: hidden;
+padding: 20px;
+}
+    </style>
+</head>
+<body background="fondo.jfif">
+    <div style="text-align:center;"></div>
+    <table border="0" style="margin: 0 auto">
+    <td>
+        <h4 style="color:#ffffff">Pendientes</h4>
+    <div id="pendientes" class="pendientes">
+        <div class="list-group">Barrer</div>
+        <div class="list-group">Tender</div>
+        <div class="list-group">Beber a lo desgraciado</div>
+        <div class="list-group">Perrear hasta el piso</div>
+        <div class="list-group">loquearnos</div>
+    
+    </div>
+    </td>
+    <td>
+        <h4 style="color:#ffffff">Proceso</h4>
+    <div id="proceso" class="grupodelistas">
+        <div class="list-group-item"></div>
+        <div class="list-group-item"></div>
+        <div class="list-group-item"></div>
+        <div class="list-group-item"></div>
+        <div class="list-group-item"></div>
+    </div>
+</td>
+<td>
+    <h4 style="color:#ffffff">completado</h4>
+    <div id="completada" class="grupodelistas">
+        <div class="list-group-item2"></div>
+        <div class="list-group-item2"></div>
+        <div class="list-group-item2"></div>
+        <div class="list-group-item2"></div>
+        <div class="list-group-item2"></div>
+    </div>
+</td>
+</table>
+</div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="jlista.min.js"></script>
+<script src="tareas.js">
+
+    
+</script>
+</html>
